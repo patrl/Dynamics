@@ -1,0 +1,34 @@
+spec-version: 0.30.0
+name: Dynamics
+
+build-type: Simple
+
+dependencies:
+- { name: "base" }
+- { name: "mtl" }
+- { name: "pretty" }
+- { name: "transformers" }
+
+default-extensions:
+  - GADTs
+  - StandaloneDeriving
+  - ScopedTypeVariables
+  - RankNTypes
+  - QuantifiedConstraints
+  - TypeApplications
+  - TypeOperators
+  - MultiParamTypeClasses
+  - ConstraintKinds
+  - DataKinds
+  - PolyKinds
+  - KindSignatures
+  - FlexibleInstances
+  - FlexibleContexts
+
+library:
+  ghc-options:
+    - -Wall
+    - -Wcompat
+    - -Wincomplete-record-updates
+    - -Wincomplete-uni-patterns
+    - -Wredundant-constraints
